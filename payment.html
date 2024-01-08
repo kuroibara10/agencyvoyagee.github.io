@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence de Voyage Bara</title>
+  <!-- Intégration de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="Icons/travel-agency.png">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body class="bg-light">
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <a class="navbar-brand ml-4" href="voyage.html"><img src="Icons/travel-agency.png" alt="travel-agency" width="40px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="voyage.html" data-i18n="Accueil">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Destination.html" data-i18n="Destinations">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="non_offres_specials.html" data-i18n="Offres_spéciales">Offres spéciales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html" data-i18n="Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-4">
+      <select class="p-1 mt-2">
+        <option value="fr" data-i18n="french" selected>French</option>
+        <option value="ar" data-i18n="arabic">Arabic</option>
+        <option value="en" data-i18n="english">English</option>
+      </select>
+    </div>
+    <div class="box ml-4">
+        <input type="search" placeholder="Search...">
+        <img src="Icons/search.png" alt="search" width="30px" height="30px">
+    </div>
+  </nav>
+  
+  <div class="container justify-content-center">
+	<div class="right">
+		<h3>PAYMENT</h3>
+		<form>
+			Accepted Card <br>
+			<img src="img/card1.png" width="100">
+			<img src="img/card2.png" width="50">
+			<br><br>
+
+			Credit card number
+		<input type="text" name="" placeholder="Enter card number">
+			
+			Exp month
+			<input type="text" name="" placeholder="Enter Month">
+			<div id="zip">
+				<label>
+					Exp year
+					<select>
+						<option>Choose Year..</option>
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+						<option>2025</option>
+					</select>
+				</label>
+					<label>
+					CVV
+					<input type="number" name="" placeholder="CVV">
+				</label>
+			</div>
+		</form>
+		<input type="submit" name="" value="Proceed to Checkout">
+	</div>
+</div>
+
+  <!-- Pied de page -->
+  <footer class="bg-warning text-light text-center py-3">
+    <p data-i18n="Agence_Voyage_Bara_Tous_droits_réservés">&copy; 2023 Agence Voyage Bara. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Intégration des scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

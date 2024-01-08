@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiket</title>
+  <!-- Intégration de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="Icons/travel-agency.png">
+  <link rel="stylesheet" href="search.css">
+</head>
+<body class="bg-light">
+
+    <!-- Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand ml-4" href="voyage.html"><img src="Icons/travel-agency.png" alt="travel-agency" width="40px" height="40px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="voyage.html" data-i18n="Accueil">Accueil <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Destination.html" data-i18n="Destinations">Destinations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="non_offres_specials.html" data-i18n="Offres_spéciales">Offres spéciales</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html" data-i18n="Contact">Contact</a>
+                </li>
+              </ul>
+        </div>
+        <div class="ml-4">
+            <select class="p-1 mt-2">
+              <option value="fr" data-i18n="french" selected>French</option>
+              <option value="ar" data-i18n="arabic">Arabic</option>
+              <option value="en" data-i18n="english">English</option>
+            </select>
+          </div>
+          <div class="box ml-4">
+              <input type="search" placeholder="Search...">
+              <img src="Icons/search.png" alt="search" width="30px" height="30px">
+          </div>
+    </nav>
+
+  <!-- Section principale -->
+    <div class="container mt-5">
+        <div class="jumbotron" style="background-image: url(img/winding-road-1556177_1920.jpg); background-position: 30000px;">
+            <h1 class="display-5 text-center" data-i18n="Pour_les_voyages_intérieurs">Pour les voyages intérieurs</h1>
+            <p class="text-center h3" data-i18n="Réservez_dès_maintenant">Réservez dès maintenant</p>
+            <div class="tm-section tm-bg-img" id="tm-section-1">
+                <div class="tm-bg-white ie-container-width-fix-2">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row">
+                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                                <form action="payment.html" method="get" class="tm-search-form tm-section-pad-2">
+                                    <!-- 11111111111111111111111111111111 -->
+                                    <div class="form-row tm-search-form-row justify-content-center ">
+                                        <!-- user_name -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/user.png" alt="user_name" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <input type="text" class="form-control" data-i18n="Entrez_votre_nom" placeholder="Entrez votre nom (CNE) ">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>    
+                                        <!-- depart -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/placeholder2.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="adult" class="form-control tm-select" id="depart">
+                                                        <option value="Lieu de départ" data-i18n="Lieu_de_départ">Lieu de départ</option>    
+                                                        <option value="Rabat" data-i18n="Rabat">Rabat</option>
+                                                        <option value="Casablanca" data-i18n="Casablanca">Casablanca</option>
+                                                        <option value="Marrakech" data-i18n="Marrakech">Marrakech</option>
+                                                        <option value="Fes" data-i18n="Fes">Fes</option>
+                                                        <option value="Tangier" data-i18n="Tangier">Tangier</option>
+                                                        <option value="Agadir" data-i18n="Agadir">Agadir</option>
+                                                        <option value="Meknes" data-i18n="Meknes">Meknes</option>
+                                                        <option value="Oujda" data-i18n="Oujda">Oujda</option>
+                                                        <option value="Kenitra" data-i18n="Kenitra">Kenitra</option>
+                                                        <option value="Tetouan" data-i18n="Tetouan">Tetouan</option>
+                                                        <option value="Essaouira" data-i18n="Essaouira">Essaouira</option>
+                                                        <option value="11" data-i18n="Nador">Nador</option>
+                                                        <option value="Beni Mellal" data-i18n="Beni_Mellal">Beni Mellal</option>
+                                                        <option value="El Jadida" data-i18n="El_Jadida">El Jadida</option>
+                                                        <option value="Taza" data-i18n="Taza">Taza</option>
+                                                        <option value="Safi" data-i18n="Safi">Safi</option>
+                                                        <option value="Mohammedia" data-i18n="Mohammedia">Mohammedia</option>
+                                                        <option value="Larache" data-i18n="Larache">Larache</option>
+                                                        <option value="Settat" data-i18n="Settat">Settat</option>
+                                                        <option value="Khouribga" data-i18n="Khouribga">Khouribga</option>
+                                                        <option value="Ksar El Kebir" data-i18n="Ksar_El_Kebir">Ksar El Kebir</option>
+                                                        <option value="Guelmim" data-i18n="Guelmim">Guelmim</option>
+                                                        <option value="Khenifra" data-i18n="Khenifra">Khenifra</option>
+                                                        <option value="Taroudant" data-i18n="Taroudant">Taroudant</option>
+                                                        <option value="Sidi Slimane" data-i18n="Sidi_Slimane">Sidi Slimane</option>
+                                                        <option value="Errachidia" data-i18n="Errachidia">Errachidia</option>
+                                                        <option value="Tiznit" data-i18n="Tiznit">Tiznit</option>
+                                                        <option value="Chefchaouen" data-i18n="Chefchaouen">Chefchaouen</option>
+                                                        <option value="Al Hoceima" data-i18n="Al_Hoceima">Al Hoceima</option>
+                                                        <option value="Midelt" data-i18n="Midelt">Midelt</option>
+                                                        <option value="Azrou" data-i18n="Azrou">Azrou</option>
+                                                        <option value="Taourirt" data-i18n="Taourirt">Taourirt</option>
+                                                        <option value="Tan-Tan" data-i18n="Tan_Tan">Tan-Tan</option>
+                                                        <option value="Sefrou" data-i18n="Sefrou">Sefrou</option>
+                                                        <option value="Youssoufia" data-i18n="Youssoufia">Youssoufia</option>
+                                                        <option value="Tarfaya" data-i18n="Tarfaya">Tarfaya</option>
+                                                        <option value="Tata" data-i18n="Tata">Tata</option>
+                                                        <option value="Merzouga" data-i18n="Merzouga">Merzouga</option>
+                                                        <option value="Dakhla" data-i18n="Dakhla">Dakhla</option>
+                                                        <option value="Al-Kuwayra" data-i18n="Al_Kuwayra">Al-Kuwayra</option>
+                                                        <option value="Kacem" data-i18n="Kacem">Kacem</option>
+                                                        <option value="Berkane" data-i18n="Berkane">Berkane</option>
+                                                        <option value="Ouarzazate" data-i18n="Ouarzazate">Ouarzazate</option>
+                                                        <option value="Laayoune" data-i18n="Laayoune">Laayoune</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- arrivee -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/placeholder2.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="adult" class="form-control tm-select" id="arrivee">
+                                                        <option value="Lieu d'arrivée" data-i18n="Lieu_d_arrivée">Lieu d'arrivée</option>
+                                                        <option value="Rabat" data-i18n="Rabat">Rabat</option>
+                                                        <option value="Casablanca" data-i18n="Casablanca">Casablanca</option>
+                                                        <option value="Marrakech" data-i18n="Marrakech">Marrakech</option>
+                                                        <option value="Fes" data-i18n="Fes">Fes</option>
+                                                        <option value="Tangier" data-i18n="Tangier">Tangier</option>
+                                                        <option value="Agadir" data-i18n="Agadir">Agadir</option>
+                                                        <option value="Meknes" data-i18n="Meknes">Meknes</option>
+                                                        <option value="Oujda" data-i18n="Oujda">Oujda</option>
+                                                        <option value="Kenitra" data-i18n="Kenitra">Kenitra</option>
+                                                        <option value="Tetouan" data-i18n="Tetouan">Tetouan</option>
+                                                        <option value="Essaouira" data-i18n="Essaouira">Essaouira</option>
+                                                        <option value="11" data-i18n="Nador">Nador</option>
+                                                        <option value="Beni Mellal" data-i18n="Beni_Mellal">Beni Mellal</option>
+                                                        <option value="El Jadida" data-i18n="El_Jadida">El Jadida</option>
+                                                        <option value="Taza" data-i18n="Taza">Taza</option>
+                                                        <option value="Safi" data-i18n="Safi">Safi</option>
+                                                        <option value="Mohammedia" data-i18n="Mohammedia">Mohammedia</option>
+                                                        <option value="Larache" data-i18n="Larache">Larache</option>
+                                                        <option value="Settat" data-i18n="Settat">Settat</option>
+                                                        <option value="Khouribga" data-i18n="Khouribga">Khouribga</option>
+                                                        <option value="Ksar El Kebir" data-i18n="Ksar_El_Kebir">Ksar El Kebir</option>
+                                                        <option value="Guelmim" data-i18n="Guelmim">Guelmim</option>
+                                                        <option value="Khenifra" data-i18n="Khenifra">Khenifra</option>
+                                                        <option value="Taroudant" data-i18n="Taroudant">Taroudant</option>
+                                                        <option value="Sidi Slimane" data-i18n="Sidi_Slimane">Sidi Slimane</option>
+                                                        <option value="Errachidia" data-i18n="Errachidia">Errachidia</option>
+                                                        <option value="Tiznit" data-i18n="Tiznit">Tiznit</option>
+                                                        <option value="Chefchaouen" data-i18n="Chefchaouen">Chefchaouen</option>
+                                                        <option value="Al Hoceima" data-i18n="Al_Hoceima">Al Hoceima</option>
+                                                        <option value="Midelt" data-i18n="Midelt">Midelt</option>
+                                                        <option value="Azrou" data-i18n="Azrou">Azrou</option>
+                                                        <option value="Taourirt" data-i18n="Taourirt">Taourirt</option>
+                                                        <option value="Tan-Tan" data-i18n="Tan_Tan">Tan-Tan</option>
+                                                        <option value="Sefrou" data-i18n="Sefrou">Sefrou</option>
+                                                        <option value="Youssoufia" data-i18n="Youssoufia">Youssoufia</option>
+                                                        <option value="Tarfaya" data-i18n="Tarfaya">Tarfaya</option>
+                                                        <option value="Tata" data-i18n="Tata">Tata</option>
+                                                        <option value="Merzouga" data-i18n="Merzouga">Merzouga</option>
+                                                        <option value="Dakhla" data-i18n="Dakhla">Dakhla</option>
+                                                        <option value="Al-Kuwayra" data-i18n="Al_Kuwayra">Al-Kuwayra</option>
+                                                        <option value="Kacem" data-i18n="Kacem">Kacem</option>
+                                                        <option value="Berkane" data-i18n="Berkane">Berkane</option>
+                                                        <option value="Ouarzazate" data-i18n="Ouarzazate">Ouarzazate</option>
+                                                        <option value="Laayoune" data-i18n="Laayoune">Laayoune</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- calendar -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/calendar2.png" alt="calendar" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      <!-- 222222222222222222222222222222 -->
+                                    <div class="form-row tm-search-form-row justify-content-center ">
+                                        <!-- personnes -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/persons.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="personnes" class="form-control tm-select" id="personnes">
+                                                        <option value="Nombre de personne" data-i18n="Nombre_de_personne">Nombre de personne</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- enfants -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/children.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="enfants" class="form-control tm-select" id="enfants">
+                                                        <option value="Nombre d'enfants" data-i18n="Nombre_d_enfants">Nombre d'enfants</option>
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- bagages -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/luggage.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="bagages" class="form-control tm-select" id="bagages">
+                                                        <option value="Nombre de bagages" data-i18n="Nombre_de_bagages">Nombre de bagages</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Money -->
+                                    <div class="form-row tm-search-form-row justify-content-center">
+                                            <div class="form-group tm-form-element tm-form-element-2 p-3 justify-content-center ml-5">
+                                                <button type="submit" class="btn btn-success tm-btn-search ml-5" width="80px" height="80px" data-i18n="Select_a_Payment_method">Select a Payment method</button>
+                                            </div>
+                                            <!-- help&sepport -->
+                                            <div class="form-row tm-search-form-row text-left ml-5">
+                                                <img src="Icons/help-desk.png" alt="help & support" width="50px" height="50px">
+                                                <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                                    <a href="Contact.html" data-i18n="Need_Help" style="color: black;text-decoration-line: none;background-color: red; border-radius: 70px;justify-content: center; padding: 15px;" target="_blank">Voir plus</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </form>
+                            </div>                        
+                        </div>      
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+
+  <!-- Section Destinations -->
+  <div class="container mt-5">
+        <div class="jumbotron" style="background-image: url(img/aircraft3-4885805_1920.jpg); background-position: 40000px">
+            <h1 class="display-5 text-center" data-i18n="Pour_les_voyages_internationaux">Pour les voyages internationaux</h1>
+            <p class="text-center h3" data-i18n="Réservez_dès_maintenant">Réservez dès maintenant</p>
+            <div class="tm-section tm-bg-img" id="tm-section-1">
+                <div class="tm-bg-white ie-container-width-fix-2">
+                    <div class="container ie-h-align-center-fix">
+                        <div class="row">
+                            <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                                <form action="money.html" method="get" class="tm-search-form tm-section-pad-2">
+                                    <!-- 11111111111111111111111111111111 -->
+                                    <div class="form-row tm-search-form-row justify-content-center ">
+                                        <!-- user_name -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-2">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/profile.png" alt="user_name" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <input type="text" class="form-control" data-i18n="Entrez_votre_nom" placeholder="Entrez votre nom (CNE) ">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>    
+                                        <!-- depart -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-2">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4 mr-2">
+                                                    <img src="Icons/placeholder.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="adult" class="form-control tm-select" id="depart">
+                                                        <option value="Lieu de départ" data-i18n="Lieu_de_départ">Lieu de départ</option>
+                                                        <option value="Japon" data-i18n="Japon">Japon</option>
+                                                          <option value="Chine" data-i18n="Chine">Chine</option>
+                                                          <option value="Thaïlande" data-i18n="Thaïlande">Thaïlande</option>
+                                                          <option value="Singapour" data-i18n="Singapour">Singapour</option>
+                                                          <option value="Émirats Arabes Unis" data-i18n="Émirats_Arabes_Unis">Émirats Arabes Unis</option>
+                                                          <option value="Bahreïn" data-i18n="Bahreïn">Bahreïn</option>
+                                                          <option value="Qatar" data-i18n="Qatar">Qatar</option>
+                                                          <option value="Inde" data-i18n="Inde">Inde</option>
+                                                          <option value="Malaisie" data-i18n="Malaisie">Malaisie</option>
+                                                          <option value="Viêt Nam" data-i18n="Viêt_Nam">Viêt Nam</option>
+                                                          <option value="Corée du Sud" data-i18n="Corée_du_Sud">Corée du Sud</option>
+                                                          <option value="Maldives" data-i18n="Maldives">Maldives</option>
+                                                          <option value="Arabie Saoudite" data-i18n="Arabie_Saoudite">Arabie Saoudite</option>
+                                                          <option value="Egypte" data-i18n="Egypt">Egypte</option>
+                                                          <option value="Afrique du Sud" data-i18n="Afrique_du_Sud">Afrique du Sud</option>
+                                                          <option value="Maroc" data-i18n="Maroc">Maroc</option>
+                                                          <option value="Algérie" data-i18n="Algérie">Algérie</option>
+                                                          <option value="Tunisie" data-i18n="Tunisie">Tunisie</option>
+                                                          <option value="États-Unis d'Amérique" data-i18n="États_Unis_dAmérique">États-Unis d'Amérique</option>
+                                                          <option value="Canada" data-i18n="Canada">Canada</option>
+                                                          <option value="Mexique" data-i18n="Mexique">Mexique</option>
+                                                          <option value="Brésil" data-i18n="Brésil">Brésil</option>
+                                                          <option value="Colombie" data-i18n="Colombie">Colombie</option>
+                                                          <option value="Argentine" data-i18n="Argentine">Argentine</option>
+                                                          <option value="Pérou" data-i18n="Pérou">Pérou</option>
+                                                          <option value="France" data-i18n="France">France</option>
+                                                          <option value="Italie" data-i18n="Italie">Italie</option>
+                                                          <option value="Espagne" data-i18n="Espagne">Espagne</option>
+                                                          <option value="Turquie" data-i18n="Turquie">Turquie</option>
+                                                          <option value="Royaume-Uni" data-i18n="Royaume_Uni">Royaume-Uni</option>
+                                                          <option value="Allemagne" data-i18n="Allemagne">Allemagne</option>
+                                                          <option value="Russie" data-i18n="Russie">Russie</option>
+                                                          <option value="Grèce" data-i18n="Grèce">Grèce</option>
+                                                          <option value="Suède" data-i18n="Suède">Suède</option>
+                                                          <option value="Autriche" data-i18n="Autriche">Autriche</option>
+                                                          <option value="Belgique" data-i18n="Belgique">Belgique</option>
+                                                          <option value="Danemark" data-i18n="Danemark">Danemark</option>
+                                                          <option value="Portugal" data-i18n="Portugal">Portugal</option>
+                                                          <option value="Hollande" data-i18n="Hollande">Hollande</option>
+                                                          <option value="Norvège" data-i18n="Norvège">Norvège</option>
+                                                          <option value="Suisse" data-i18n="Suisse">Suisse</option>
+                                                          <option value="Croatie" data-i18n="Croatie">Croatie</option>
+                                                          <option value="Australie" data-i18n="Australie">Australie</option>
+                                                          <option value="Nouvelle-Zélande" data-i18n="Nouvelle_Zélande">Nouvelle-Zélande</option>
+                                                          <option value="Antarctique" data-i18n="Antarctique">Antarctique</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- arrivee -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-2">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4 mr-2">
+                                                    <img src="Icons/placeholder.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="adult" class="form-control tm-select" id="arrivée">
+                                                          <option value="Lieu d'arrivée" data-i18n="Lieu_d_arrivée">Lieu d'arrivée</option>
+                                                          <option value="Japon" data-i18n="Japon">Japon</option>
+                                                          <option value="Chine" data-i18n="Chine">Chine</option>
+                                                          <option value="Thaïlande" data-i18n="Thaïlande">Thaïlande</option>
+                                                          <option value="Singapour" data-i18n="Singapour">Singapour</option>
+                                                          <option value="Émirats Arabes Unis" data-i18n="Émirats_Arabes_Unis">Émirats Arabes Unis</option>
+                                                          <option value="Bahreïn" data-i18n="Bahreïn">Bahreïn</option>
+                                                          <option value="Qatar" data-i18n="Qatar">Qatar</option>
+                                                          <option value="Inde" data-i18n="Inde">Inde</option>
+                                                          <option value="Malaisie" data-i18n="Malaisie">Malaisie</option>
+                                                          <option value="Viêt Nam" data-i18n="Viêt_Nam">Viêt Nam</option>
+                                                          <option value="Corée du Sud" data-i18n="Corée_du_Sud">Corée du Sud</option>
+                                                          <option value="Maldives" data-i18n="Maldives">Maldives</option>
+                                                          <option value="Arabie Saoudite" data-i18n="Arabie_Saoudite">Arabie Saoudite</option>
+                                                          <option value="Egypte" data-i18n="Egypt">Egypte</option>
+                                                          <option value="Afrique du Sud" data-i18n="Afrique_du_Sud">Afrique du Sud</option>
+                                                          <option value="Maroc" data-i18n="Maroc">Maroc</option>
+                                                          <option value="Algérie" data-i18n="Algérie">Algérie</option>
+                                                          <option value="Tunisie" data-i18n="Tunisie">Tunisie</option>
+                                                          <option value="États-Unis d'Amérique" data-i18n="États_Unis_dAmérique">États-Unis d'Amérique</option>
+                                                          <option value="Canada" data-i18n="Canada">Canada</option>
+                                                          <option value="Mexique" data-i18n="Mexique">Mexique</option>
+                                                          <option value="Brésil" data-i18n="Brésil">Brésil</option>
+                                                          <option value="Colombie" data-i18n="Colombie">Colombie</option>
+                                                          <option value="Argentine" data-i18n="Argentine">Argentine</option>
+                                                          <option value="Pérou" data-i18n="Pérou">Pérou</option>
+                                                          <option value="France" data-i18n="France">France</option>
+                                                          <option value="Italie" data-i18n="Italie">Italie</option>
+                                                          <option value="Espagne" data-i18n="Espagne">Espagne</option>
+                                                          <option value="Turquie" data-i18n="Turquie">Turquie</option>
+                                                          <option value="Royaume-Uni" data-i18n="Royaume_Uni">Royaume-Uni</option>
+                                                          <option value="Allemagne" data-i18n="Allemagne">Allemagne</option>
+                                                          <option value="Russie" data-i18n="Russie">Russie</option>
+                                                          <option value="Grèce" data-i18n="Grèce">Grèce</option>
+                                                          <option value="Suède" data-i18n="Suède">Suède</option>
+                                                          <option value="Autriche" data-i18n="Autriche">Autriche</option>
+                                                          <option value="Belgique" data-i18n="Belgique">Belgique</option>
+                                                          <option value="Danemark" data-i18n="Danemark">Danemark</option>
+                                                          <option value="Portugal" data-i18n="Portugal">Portugal</option>
+                                                          <option value="Hollande" data-i18n="Hollande">Hollande</option>
+                                                          <option value="Norvège" data-i18n="Norvège">Norvège</option>
+                                                          <option value="Suisse" data-i18n="Suisse">Suisse</option>
+                                                          <option value="Croatie" data-i18n="Croatie">Croatie</option>
+                                                          <option value="Australie" data-i18n="Australie">Australie</option>
+                                                          <option value="Nouvelle-Zélande" data-i18n="Nouvelle_Zélande">Nouvelle-Zélande</option>
+                                                          <option value="Antarctique" data-i18n="Antarctique">Antarctique</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- calendar -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-2 mr-2">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4 mr-2">
+                                                    <img src="Icons/calendar.png" alt="calendar" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <input type="date" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                      <!-- 222222222222222222222222222222 -->
+                                    <div class="form-row tm-search-form-row justify-content-center">
+                                        <!-- personnes -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/persons.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="personnes" class="form-control tm-select" id="personnes">
+                                                        <option value="Nombre de personne" data-i18n="Nombre_de_personne">Nombre de personne</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- enfants -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">                                            
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/children.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="enfants" class="form-control tm-select" id="enfants">
+                                                        <option value="Nombre d'enfants" data-i18n="Nombre_d_enfants">Nombre d'enfants</option>
+                                                        <option value="0">0</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- bagages -->
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                            <div class="row">
+                                                <div class="pr-2 pl-4">
+                                                    <img src="Icons/luggage.png" alt="place" width="40px" height="40px">
+                                                </div>
+                                                <div class="rrr">
+                                                    <select name="bagages" class="form-control tm-select" id="bagages">
+                                                        <option value="Nombre de bagages" data-i18n="Nombre_de_bagages">Nombre de bagages</option>
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Money -->
+                                    <div class="form-row tm-search-form-row justify-content-center">
+                                        <div class="form-group tm-form-element tm-form-element-2 p-3 justify-content-center ml-5">
+                                            <button type="submit" class="btn btn-primary tm-btn-search ml-5" width="80px" height="80px" data-i18n="Select_a_Payment_method">Select a Payment method</button>
+                                        </div>
+                                        <!-- help&sepport -->
+                                        <div class="form-row tm-search-form-row text-left ml-5">
+                                            <img src="Icons/help-desk.png" alt="help & support" width="50px" height="50px">
+                                            <div class="form-group tm-form-element tm-form-element-2 p-3">
+                                                <a href="Contact.html" data-i18n="Need_Help" style="color: black;text-decoration-line: none;background-color: red; border-radius: 70px;justify-content: center; padding: 15px;" target="_blank">Voir plus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>                        
+                        </div>      
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </div>
+  
+
+  <!-- Pied de page -->
+  <footer class="bg-warning text-light text-center py-3">
+    <p data-i18n="Agence_Voyage_Bara_Tous_droits_réservés">&copy; 2023 Agence Voyage Bara. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Intégration des scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

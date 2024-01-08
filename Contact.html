@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence de Voyage Bara</title>
+  <!-- Intégration de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="Icons/travel-agency.png">
+  <link rel="stylesheet" href="search.css">
+</head>
+<body class="bg-light">
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <a class="navbar-brand ml-4" href="voyage.html"><img src="Icons/travel-agency.png" alt="travel-agency" width="40px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="voyage.html" data-i18n="Accueil">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Destination.html" data-i18n="Destinations">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="non_offres_specials.html" data-i18n="Offres_spéciales">Offres spéciales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html" data-i18n="Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="ml-4">
+      <select class="p-1 mt-2">
+        <option value="fr" data-i18n="french" selected>French</option>
+        <option value="ar" data-i18n="arabic">Arabic</option>
+        <option value="en" data-i18n="english">English</option>
+      </select>
+    </div>
+    <div class="box ml-4">
+        <input type="search" placeholder="Search...">
+        <img src="Icons/search.png" alt="search" width="30px" height="30px">
+    </div>
+  </nav>
+
+  <section id="offres" class="py-1">
+    <section id="contact" class="container my-5 bg-warning pb-4 pt-4 pl-5">
+      <h2 class="text-center mb-4" data-i18n="Contactez-nous"><img src="Icons/contact-me.png" alt="facbook" width="50px" height="50px" class="mr-2">Contactez-nous</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name" data-i18n="nom"><img src="Icons/profile.png" alt="x" width="30px" height="30px" class="mr-2">Nom</label>
+              <input type="text" class="form-control" id="name" placeholder="Votre nom" data-i18n="Votre_nom">
+            </div>
+            <div class="form-group">
+              <label for="email" data-i18n="Adresse_Email"><img src="Icons/sign.png" alt="x" width="30px" height="30px" class="mr-2">Adresse Email</label>
+              <input type="email" class="form-control" id="email" placeholder="votre@email.com" data-i18n="votre_email">
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="Message"><img src="Icons/chat.png" alt="x" width="30px" height="30px" class="mr-2">Message</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="Votre message" data-i18n="Votre_message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="Envoyer">Envoyer</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <p class="lead" data-i18n="Vous_pouvez_également_nous_contacter_directement">Vous pouvez également nous contacter directement :</p>
+          <p><img src="Icons/gmail.png" alt="gmail" width="30px" height="30px" class="mr-2">Email: contact@agencevoyage.com</p>
+          <p><img src="Icons/telephone.png" alt="x" width="30px" height="30px" class="mr-2">Téléphone: +33 1 23 45 67 89</p>
+          <p class="h5 text-center p-3 mr-4 text-danger" data-i18n="Social_Media">Social Media: </p>
+          <div class="row justify-content-center">
+            <div class="facbook mr-5">
+              <a href="#">
+                <img src="Icons/facebook.png" alt="facbook" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="x mr-5">
+              <a href="#">
+                <img src="Icons/twitter (1).png" alt="x" width="50px" height="50px">
+              </a>
+            </div>
+            <div class="instagram mr-5">
+              <a href="#">
+                <img src="Icons/instagram.png" alt="instagram" width="50px" height="50px">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Pied de page -->
+  <footer class="bg-warning text-light text-center py-3">
+    <p data-i18n="Agence_Voyage_Bara_Tous_droits_réservés">&copy; 2023 Agence Voyage Bara. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Intégration des scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

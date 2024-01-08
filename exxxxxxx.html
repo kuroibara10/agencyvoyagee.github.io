@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agence de Voyage Bara</title>
+  <!-- Intégration de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" type="image/x-icon" href="Icons/travel-agency.png">
+  <link rel="stylesheet" href="search.css">
+  <link rel="stylesheet" href="in-up.css">
+</head>
+<body class="bg-light">
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <a class="navbar-brand ml-4" href="voyage.html"><img src="Icons/travel-agency.png" alt="travel-agency" width="40px" height="40px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="voyage.html" data-i18n="Accueil">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Destination.html" data-i18n="Destinations">Destinations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="non_offres_specials.html" data-i18n="Offres_spéciales">Offres spéciales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html" data-i18n="Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <header>
+      <nav class="navbar">
+          <span class="hamburger-btn material-symbols-rounded"></span>
+          <ul class="links">
+              <span class="close-btn material-symbols-rounded"><img src="Icons/" alt=""></span>
+          </ul>
+          <button class="login-btn">LOG IN</button>
+      </nav>
+    </header>
+    <div class="ml-4">
+      <select class="p-1 mt-2">
+        <option value="fr" data-i18n="french" selected>French</option>
+        <option value="ar" data-i18n="arabic">Arabic</option>
+        <option value="en" data-i18n="english">English</option>
+      </select>
+    </div>
+    <div class="box ml-4">
+        <input type="search" placeholder="Search...">
+        <img src="Icons/search.png" alt="search" width="30px" height="30px">
+    </div>
+  </nav>
+  
+  <!-- Section principale -->
+  <form action="tiket.html" target="_blank">
+    <div class="container mt-5 bg-warning ju">
+      <div class="jumbotron text-light text-center" style="background-image: url(/img/hiker22-1607078_1280.jpg);">
+        <h2 class="display-4 text-center" data-i18n="Découvrez_le_monde_avec_notre_agence_de_voyage">Découvrez le monde avec notre agence de voyage</h2>
+        <p class="lead text-center" data-i18n="Des_destinations_exotiques_vous_attendent"> Des destinations exotiques vous attendent. Réservez votre aventure dès aujourd'hui!</p>
+        <a class="btn btn-primary btn-lg" href="non_offres_specials.html" role="button" data-i18n="Voir_les_offres">Voir les offres</a>
+      </div>
+    </div>
+    <section id="offres" class="py-2">
+      <div class="container row justify-content-around ml-4">
+        <img src="Icons/bus (2).png" alt="airplane" width="50px" height="50px" class="mb-4 ml-5"><h2 class="text-center mb-4 ml-5" data-i18n="Nos_Destinations_Populaires"></h2><img src="Icons/fly.png" alt="airplane" width="50px" height="50px" class="mb-4 ml-2">
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="row">
+          <!-- Ajoutez vos offres spéciales ici -->
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Casablanca"><span style="color: #6064b6">Maroc-Casablanca</span></h4>
+                <img src="city v2/casablanca.jpg" alt="Casablanca" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Dakhla"><span style="color: #6064b6">Maroc-Dakhla</span></h4>
+                <img src="city v2/dakhla.jpg" alt="Dakhla" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Agadir"><span style="color: #6064b6">Maroc-Agadir</span></h4>
+                <img src="city v2/Agadir_oufella.jpg" alt="Agadir" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh -->
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="row">
+          <!-- Ajoutez vos offres spéciales ici -->       
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Ifrane"><span style="color: #6064b6">Maroc-Ifrane</span></h4>
+                <img src="city v2/Ifrane_Snow.jpg" alt="Ifrane" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Laayoune"><span style="color: #6064b6">Maroc-Laayoune</span></h4>
+                <img src="city v2/Laayoune2.jpg" alt="Laayoune" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Maroc_Guelmim"><span style="color: #6064b6">Maroc-Guelmim</span></h4>
+                <img src="city v2/Guelmim.jpg" alt="Guelmim" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="États_Unis_dAmérique"><span style="color: #6064b6">États-Unis d'Amérique</span></h4>
+                <img src="contry v2/usa.jpg" alt="Ifrane" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="France"><span style="color: #6064b6">France</span></h4>
+                <img src="contry v2/france.jpg" alt="Laayoune" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title text-center" data-i18n="Egypt"><span style="color: #6064b6">Egypt</span></h4>
+                <img src="contry v2/egypt-2267089_1920.jpg" alt="Guelmim" width="300px" height="200px"  class="mx-auto d-block">
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <a href="Destination.html" data-i18n="Voir_plus" style="color: black;text-decoration-line: none;background-color: orange; border-radius: 70px;justify-content: center; padding: 15px;" target="_blank">Voir plus</a>
+        </div>
+      </div>
+    </section>
+    <br>
+    <br>
+    <!-- Section Offres spéciales -->
+    <section id="offres" class="py-2">
+      <div class="container row justify-content-around ml-5">
+        <img src="Icons/bus (2).png" alt="airplane" width="50px" height="50px" class="mb-4 ml-5"><h2 class="text-center mb-4 ml-5" data-i18n="Nos_Offres_spéciales_Populaires"></h2><img src="Icons/fly.png" alt="airplane" width="50px" height="50px" class="mb-4 ml-2">
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div class="row justify-content-around">
+              <div class="a">
+                <h4 class="card-title text-center" data-i18n="Maroc_Guelmim"><span style="color: #ff6d6d">Maroc-Guelmim</span></h4>
+                <img src="city v2/Guelmim.jpg" alt="Marackech" width="300px" height="200px"  class="mx-auto d-block">
+              </div>
+              <div class="flex-column-reverse mt-5">
+                <h4 class="card-title ml-5"><span style="color: #ff6d6d">250 DH</span></h4>
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <br>  
+                <div class="text-center">
+                  <button type="submit" class="btn btn-danger tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+              <div class="c">
+                <h4 class="card-title text-center" data-i18n="Maroc_Tanger"><span style="color: #ff6d6d">Maroc-Tanger</span></h4>
+                <img src="city v2/Tanger_cor.jpg" alt="Rabat" width="300px" height="200px"  class="mx-auto d-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div class="row justify-content-around">
+              <div class="a">
+                <h4 class="card-title text-center" data-i18n="Maroc_Guelmim"><span style="color: #ff6d6d">Maroc-Guelmim</span></h4>
+                <img src="city v2/Guelmim.jpg" alt="Spain" width="300px" height="200px"  class="mx-auto d-block">
+              </div>
+              <div class="flex-column-reverse mt-5">
+                <h4 class="card-title ml-5"><span style="color: #ff6d6d">2000 DH</span></h4>
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <img src="Icons/right-arrow (1).png" alt="right-arrow" width="50px" height="50px" class="ml-2">
+                <br>  
+                <div class="text-center">
+                  <button type="submit" class="btn btn-danger tm-btn-search mt-2" data-i18n="Réservez_dès_maintenant"><a href="tiket.html" style="color: #fff;text-decoration-line: none;" target="_blank">Réservez dès maintenant</a></button>
+                </div>
+              </div>
+              <div class="c">
+                <h4 class="card-title text-center" data-i18n="États_Unis_dAmérique"><span style="color: #ff6d6d">États-Unis d'Amérique</span></h4>
+                <img src="contry v2/usa.jpg" alt="" width="300px" height="200px"  class="mx-auto d-block">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="offres" class="py-2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <a href="non_offres_specials.html" data-i18n="Voir_plus" style="color: black;text-decoration-line: none;background-color: orange; border-radius: 70px;justify-content: center; padding: 15px;" target="_blank">Voir plus</a>
+        </div>
+      </div>
+    </section>  
+    
+  
+    <!-- Section Contact -->
+    <br>
+    <br>
+    <section id="offres" class="py-2">
+      <section id="contact" class="container my-5 bg-warning pb-4 pt-4 pl-5">
+        <h2 class="text-center mb-4" data-i18n="Contactez-nous"><img src="Icons/contact-me.png" alt="facbook" width="50px" height="50px" class="mr-2">Contactez-nous</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="form-group">
+                <label for="name" data-i18n="nom"><img src="Icons/profile.png" alt="x" width="30px" height="30px" class="mr-2">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom" data-i18n="Votre_nom">
+              </div>
+              <div class="form-group">
+                <label for="email" data-i18n="Adresse_Email"><img src="Icons/sign.png" alt="x" width="30px" height="30px" class="mr-2">Adresse Email</label>
+                <input type="email" class="form-control" id="email" placeholder="votre@email.com" data-i18n="votre_email">
+              </div>
+              <div class="form-group">
+                <label for="message" data-i18n="Message"><img src="Icons/chat.png" alt="x" width="30px" height="30px" class="mr-2">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Votre message" data-i18n="Votre_message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" data-i18n="Envoyer">Envoyer</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <p class="lead" data-i18n="Vous_pouvez_également_nous_contacter_directement">Vous pouvez également nous contacter directement :</p>
+            <p><img src="Icons/gmail.png" alt="gmail" width="30px" height="30px" class="mr-2">Email: contact@agencevoyage.com</p>
+            <p><img src="Icons/telephone.png" alt="x" width="30px" height="30px" class="mr-2">Téléphone: +33 1 23 45 67 89</p>
+            <p class="h5 text-center p-3 mr-4 text-danger" data-i18n="Social_Media">Social Media: </p>
+            <div class="row justify-content-center">
+              <div class="facbook mr-5">
+                <a href="#">
+                  <img src="Icons/facebook.png" alt="facbook" width="50px" height="50px">
+                </a>
+              </div>
+              <div class="x mr-5">
+                <a href="#">
+                  <img src="Icons/twitter (1).png" alt="x" width="50px" height="50px">
+                </a>
+              </div>
+              <div class="instagram mr-5">
+                <a href="#">
+                  <img src="Icons/instagram.png" alt="instagram" width="50px" height="50px">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </form>
+  <div class="blur-bg-overlay"></div>
+  <div class="form-popup">
+      <span class="close-btn material-symbols-rounded">close</span>
+      <div class="form-box login">
+          <div class="form-details">
+              <h2>Welcome Back</h2>
+              <p>Please log in using your personal information to stay connected with us.</p>
+          </div>
+          <div class="form-content">
+              <h2>LOGIN</h2>
+              <form action="#">
+                  <div class="input-field">
+                      <input type="text" required>
+                      <label>Email</label>
+                  </div>
+                  <div class="input-field">
+                      <input type="password" required>
+                      <label>Password</label>
+                  </div>
+                  <a href="#" class="forgot-pass-link">Forgot password?</a>
+                  <button type="submit">Log In</button>
+              </form>
+              <div class="bottom-link">
+                  Don't have an account?
+                  <a href="#" id="signup-link">Signup</a>
+              </div>
+          </div>
+      </div>
+      <div class="form-box signup">
+          <div class="form-details">
+              <h2>Create Account</h2>
+              <p>To become a part of our community, please sign up using your personal information.</p>
+          </div>
+          <div class="form-content">
+              <h2>SIGNUP</h2>
+              <form action="#">
+                  <div class="input-field">
+                      <input type="text" required>
+                      <label>Enter your email</label>
+                  </div>
+                  <div class="input-field">
+                      <input type="password" required>
+                      <label>Create password</label>
+                  </div>
+                  <div class="policy-text">
+                      <input type="checkbox" id="policy">
+                      <label for="policy">
+                          I agree the
+                          <a href="#" class="option">Terms & Conditions</a>
+                      </label>
+                  </div>
+                  <button type="submit">Sign Up</button>
+              </form>
+              <div class="bottom-link">
+                  Already have an account? 
+                  <a href="#" id="login-link">Login</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Pied de page -->
+  <footer class="bg-warning text-light text-center py-3">
+    <p data-i18n="Agence_Voyage_Bara_Tous_droits_réservés">&copy; 2023 Agence Voyage Bara. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Intégration des scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="in-up.js" defer></script>
+</body>
+</html>
