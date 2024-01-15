@@ -46,6 +46,14 @@
         <img src="Icons/search.png" alt="search" width="30px" height="30px">
     </div>
   </nav>
+
+
+  <div class="alee">
+    <div class="alert alert-success alert-dismissible" id="alert">
+        <button type="button" class="btn-close" id="btnclose" data-bs-dismiss="alert" ></button>
+        <strong>Succès!</strong>Votre réservation a été complétée avec succès..
+    </div>
+  </div>
   
   <div class="container justify-content-center">
 	<div class="right">
@@ -78,12 +86,12 @@
 				</label>
 			</div>
 		</form>
-		<input type="submit" name="" value="Proceed to Checkout">
+		<input type="submit" name="" value="Proceed to Checkout" id="btnopen">
 	</div>
 </div>
 
   <!-- Pied de page -->
-  <footer class="bg-warning text-light text-center py-3">
+  <footer class="bg-warning text-light text-center p-2">
     <p data-i18n="Agence_Voyage_Bara_Tous_droits_réservés">&copy; 2023 Agence Voyage Bara. Tous droits réservés.</p>
   </footer>
 
@@ -92,5 +100,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="script.js"></script>
+  <script src="alesrt.js"></script>
 </body>
 </html>
